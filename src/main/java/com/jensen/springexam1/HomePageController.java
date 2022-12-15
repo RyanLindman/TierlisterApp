@@ -12,7 +12,6 @@ public class HomePageController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String test() {
         return "homepageSender";
-
     }
 }
 
