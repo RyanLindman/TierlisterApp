@@ -78,17 +78,24 @@
     <form action="homepageReciever.jsp" method="GET">
         <div class="instruction">
             <p> Rank your favorite movie series in this tier list above! <strong style="color: lightcoral">Movie series only!</strong> example: "Harry Potter" or "Fast & Furious" </p>
+            <p> The series should contain of 3 or more movies for it to be considered as a movie series'  </p>
         </div>
-        <br>
         <div class="input">
             <input type="text"  name="Movieserie" placeholder="This will insert in list"/>
             <select name="tierType">
-                <option value="s">S</option>
-                <option value="a">A</option>
-                <option value="b">B</option>
-                <option value="c">C</option>
-                <option value="d">Dumpster</option>
+                <option style="background-color:lightpink" value="s">S</option>
+                <option style="background-color:lightsalmon" value="a">A</option>
+                <option style="background-color:goldenrod" value="b">B</option>
+                <option style="background-color:yellowgreen" value="c">C</option>
+                <option style="background-color:green" value="d">Dumpster</option>
             </select>
+                <button class="btn">
+                    <i class="fa fa-plus"></i>
+                </button>
+        </div>
+        <div class="submit">
+            <br>
+            <input type="submit" value="Submit">
         </div>
     </form>
 </body>

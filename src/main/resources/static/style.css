@@ -65,7 +65,7 @@ body {
 
 .container-row {
     display: flex;
-    /*flex-grow: 1;*/
+
 }
 
 .container-row .movie {
@@ -79,12 +79,34 @@ body {
     align-items: center;
 }
 .instruction p {
-    margin-left:10px;
+    margin-left:35px;
     color: #FFFFFF;
 
 }
-.input {
-    margin-left:10px;
+input {
+    margin-left:35px;
+    width: 250px;
+    height: 35px;
+    border: none;
+    outline: none;
+
+}
+select {
+    height: 35px;
+    cursor: pointer;
+
+
+}
+button {
+    height: 35px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: #f154ff;
+}
+.submit input {
+    height: 35px;
+    cursor: pointer;
 
 }
 
