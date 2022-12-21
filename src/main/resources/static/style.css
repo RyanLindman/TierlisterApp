@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background: #101010;
+
     font-family: Roboto;
 
 }
@@ -13,7 +14,7 @@ body {
 }
 
 .tier-s {
-    background-color: lightpink;
+    background-color: #ff5173;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,7 @@ body {
     height: 150px;
     min-width: 150px;
 }
+
 .tier-a {
     background-color: lightsalmon;
     display: flex;
@@ -33,7 +35,7 @@ body {
     min-width: 150px;
 }
 .tier-b {
-    background-color: goldenrod;
+    background-color: #ffc335;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +55,7 @@ body {
     min-width: 150px;
 }
 .tier-d {
-    background-color: green;
+    background-color: #1dff21;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,7 +67,6 @@ body {
 
 .container-row {
     display: flex;
-
 }
 
 .container-row .movie {
@@ -97,7 +98,7 @@ select {
 
 
 }
-button {
+.btn {
     height: 35px;
     width: 50px;
     border: none;
@@ -107,6 +108,41 @@ button {
 .submit input {
     height: 35px;
     cursor: pointer;
+}
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.2) 0%, rgba(161,57,181,0.2) 35%, rgba(0,212,255,0.2) 100%);
+}
+
+.modal-content {
+    background-color: #292929;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    color: white;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 

@@ -8,13 +8,25 @@ import lombok.Data;
 @Data
 
 public class MovieEntity {
+    public String getTier() {
+        return tier;
+    }
 
+    public void setTier(String tier) {
+        this.tier = tier;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
     @Column(unique = true)
     private String title;
-   // private String director;
-   // private String description;
-
+    private String tier;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
