@@ -23,6 +23,6 @@ public class HomePageController {
         homePage.addAttribute("movies", movieRepository.findAll());
         return "index";
     }
-
+;
 }
 

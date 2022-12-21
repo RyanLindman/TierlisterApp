@@ -142,12 +142,11 @@
             const span = document.getElementsByClassName('close').item(0);
             let deleteButton = document.getElementById('deleteButton');
 
-            // Set default values
             let editMovieTitleInput = document.getElementById('editMovieTitle');
             let editMovieTierSelect = document.getElementById('editMovieTier');
             document.getElementById('editMovieId').value = id;
             editMovieTitleInput.value = movie;
-            // Search for selected tier and set as default
+
             for (let i, j = 0; i = editMovieTierSelect.options[j]; j++) {
                 if (i.value == movieTier.toLowerCase()) {
                     editMovieTierSelect.selectedIndex = j;
@@ -159,7 +158,6 @@
                 modal.style.display = "none";
             }
 
-            // Setup buttons
             deleteButton.onclick = () => {
                 deleteMovie(id, movie, movieTier);
             }
